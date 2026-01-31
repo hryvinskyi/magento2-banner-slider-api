@@ -1,0 +1,24 @@
+{
+    "name": "hryvinskyi/magento2-banner-slider-api",
+    "description": "Banner Slider API module - contains all contracts and DTOs",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Volodymyr Hryvinskyi",
+            "email": "volodymyr@hryvinskyi.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hryvinskyi\\BannerSliderApi\\": ""
+        }
+    }
+}
