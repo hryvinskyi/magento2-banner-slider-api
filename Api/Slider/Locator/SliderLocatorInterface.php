@@ -12,7 +12,7 @@ namespace Hryvinskyi\BannerSliderApi\Api\Slider\Locator;
 use Hryvinskyi\BannerSliderApi\Api\Data\SliderInterface;
 
 /**
- * Locator interface for retrieving slider by location
+ * Locator interface for retrieving sliders with context validation
  *
  * @api
  */
@@ -22,7 +22,19 @@ interface SliderLocatorInterface
      * Get slider by location identifier
      *
      * @param string $location
+     * @param int $storeId
+     * @param int $customerGroupId
      * @return SliderInterface|null
      */
-    public function getByLocation(string $location): ?SliderInterface;
+    public function getByLocation(string $location, int $storeId, int $customerGroupId): ?SliderInterface;
+
+    /**
+     * Get slider by ID with store and customer group validation
+     *
+     * @param int $sliderId
+     * @param int $storeId
+     * @param int $customerGroupId
+     * @return SliderInterface|null
+     */
+    public function getById(int $sliderId, int $storeId, int $customerGroupId): ?SliderInterface;
 }
