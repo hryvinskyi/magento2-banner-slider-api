@@ -197,30 +197,30 @@ interface SliderInterface extends ExtensibleDataInterface
      *
      * @return bool
      */
-    public function isAutoplayEnabled(): bool;
+    public function isAutoPlayEnabled(): bool;
 
     /**
      * Set autoplay enabled status
      *
-     * @param bool $autoplay
+     * @param bool $autoPlay
      * @return $this
      */
-    public function setAutoplayEnabled(bool $autoplay): SliderInterface;
+    public function setAutoPlayEnabled(bool $autoPlay): SliderInterface;
 
     /**
      * Get autoplay timeout in milliseconds
      *
      * @return int|null
      */
-    public function getAutoplayTimeout(): ?int;
+    public function getAutoPlayTimeout(): ?int;
 
     /**
      * Set autoplay timeout in milliseconds
      *
-     * @param int|null $autoplayTimeout
+     * @param int|null $autoPlayTimeout
      * @return $this
      */
-    public function setAutoplayTimeout(?int $autoplayTimeout): SliderInterface;
+    public function setAutoPlayTimeout(?int $autoPlayTimeout): SliderInterface;
 
     /**
      * Check if navigation arrows are enabled
