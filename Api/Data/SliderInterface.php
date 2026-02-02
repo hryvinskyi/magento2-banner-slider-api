@@ -39,6 +39,7 @@ interface SliderInterface extends ExtensibleDataInterface
     public const PRELOAD_BANNERS_COUNT = 'preload_banners_count';
     public const FROM_DATE = 'from_date';
     public const TO_DATE = 'to_date';
+    public const CUSTOM_CSS = 'custom_css';
     public const CREATED_AT = 'created_at';
     public const UPDATED_AT = 'updated_at';
 
@@ -326,6 +327,21 @@ interface SliderInterface extends ExtensibleDataInterface
      * @return $this
      */
     public function setToDate(?string $toDate): SliderInterface;
+
+    /**
+     * Get custom CSS styles
+     *
+     * @return string|null
+     */
+    public function getCustomCss(): ?string;
+
+    /**
+     * Set custom CSS styles
+     *
+     * @param string|null $customCss
+     * @return $this
+     */
+    public function setCustomCss(?string $customCss): SliderInterface;
 
     /**
      * Get created at timestamp
